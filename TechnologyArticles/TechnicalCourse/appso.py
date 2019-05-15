@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 import re
 from dataModel import dataModel
 
-def getPcbeta_tech():
+def getAppso():
     url = "https://www.ifanr.com/app"
     result = requests.get(url)
     dataArray = []
@@ -29,6 +29,6 @@ def getPcbeta_tech():
     return dataArray
 
 if __name__ == "__main__":
-    array = getPcbeta_tech()
+    array = getAppso()
     for item in array:
         item.printIt()
