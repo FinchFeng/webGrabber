@@ -3,7 +3,6 @@ import urllib.request
 from bs4 import BeautifulSoup
 import re
 from dataModel import dataModel
-
 def getAppso():
     url = "https://www.ifanr.com/app"
     result = requests.get(url)

@@ -1,6 +1,5 @@
 import requests
 from dataModel import dataModel
-
 def getSspai():
     url = "https://sspai.com/api/v1/articles?offset=0&limit=20&has_tag=1&tag=%E7%83%AD%E9%97%A8%E6%96%87%E7%AB%A0&include_total=false&type=recommend_to_home"
     list = requests.get(url).json()

@@ -2,7 +2,6 @@ import requests
 import re
 from bs4 import BeautifulSoup
 from dataModel import dataModel
-
 def getSouhuArticles():
     dataArray = []
     imageUrlArray = []

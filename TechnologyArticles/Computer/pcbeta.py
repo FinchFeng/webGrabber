@@ -12,14 +12,12 @@ def getPcbeta():
     dataArray = []
     soup = BeautifulSoup(data,"html.parser")
     div_set = soup.find_all("a", class_="thumb")
-    # print(div_set)
     for div in div_set:
         if(div.find("img").get("title")):
             title = div.find("img").get("title")
             eachUrl = div.get("href")
             imageUrl = div.find("img").get("src")
             dataArray.append(dataModel(title,eachUrl,imageUrl,"computer"))
-
     return dataArray
 
 if __name__ == "__main__":

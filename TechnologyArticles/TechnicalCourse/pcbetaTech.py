@@ -19,7 +19,6 @@ def getPcbeta_tech():
             eachUrl = div.get("href")
             imageUrl = div.find("img").get("src")
             dataArray.append(dataModel(title,eachUrl,imageUrl,"course"))
-
     return dataArray
 
 if __name__ == "__main__":
